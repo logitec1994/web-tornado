@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Default title{% end %}</title>
+</head>
+<body>
+    <a href="/login">Login</a>
+    <a href="/admin">Admin</a>
+    <a href="/">Home</a>
+
+    {% block content %}
+    <h1>Content Here</h1>
+    {% end %}
+
+
+
+</body>
+</html>

@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
-    <a href="/login">Login</a>
-    <a href="/admin">Admin</a>
-    <a href="/">Home</a>
-</body>
-</html>
+{% extends ../html/base.html %}
+
+{% block content %}    
+    {% for item in items %}
+    <li> {{ escape(item) }} </li>
+    {% end %}
+{% end %}

@@ -3,4 +3,5 @@ import tornado.web
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
-        self.render("../html/main.html")
+        items = ["Item1", "Item2", "Item3"]
+        self.render("../html/main.html", items=items)

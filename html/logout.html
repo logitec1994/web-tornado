@@ -1,9 +1,13 @@
 {% extends ../html/base.html %}
 
+{% block title %}
+Login Page
+{% end %}
+
 {% block content %}
-    <form action="/login" method="post">
+    <form action="/logout" method="post">
         <!-- <input type="text" name="login" placeholder="Enter your name"> -->
         <!-- <input type="password" name="password" placeholder="Enter your password"> -->
-        <input type="submit" value="Log Out">
+        Hello {{login}}<input type="submit" value="Log Out">
     </form>
 {% end %}

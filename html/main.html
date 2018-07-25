@@ -1,5 +1,9 @@
 {% extends ../html/base.html %}
 
+{% block title %}
+Home Page
+{% end %}
+
 {% block content %}    
     {% for item in items %}
     <li> {{ escape(item) }} </li>
